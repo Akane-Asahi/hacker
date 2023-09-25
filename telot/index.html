@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="icon.ico">
+    <title>তিলত</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-end;
+            min-height: 100vh;
+            position: relative;
+        }
+
+        iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            border: none;
+            z-index: -1;
+        }
+
+        #customAudioControls {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            z-index: 1;
+            margin-top: -50px;
+        }
+
+        button {
+            background-color: transparent;
+            border: 1px solid rgb(161, 161, 161);
+            /* Add a 1px white border */
+            border-radius: 10px;
+            /* Make the border rounded */
+            cursor: pointer;
+            color: rgb(161, 161, 161);
+            transition: opacity 0.3s;
+            margin: 10px;
+            margin-top: -200px;
+            padding: 7px;
+            opacity: 0.3;
+            /* Add some padding to make the buttons more clickable */
+        }
+
+        button:focus {
+            outline: none;
+        }
+
+        button:hover {
+            opacity: 0.7;
+        }
+
+        audio {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <iframe src="https://telot.framer.ai/"></iframe>
+    <div id="customAudioControls">
+        <button id="playButton">Play</button>
+        <button id="pauseButton">Pause</button>
+    </div>
+    <audio autoplay loop id="customAudio">
+        <!-- Specify the source of your audio file using the <source> element -->
+        <source src="telot.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <script>
+        const playButton = document.getElementById("playButton");
+        const pauseButton = document.getElementById("pauseButton");
+        const customAudio = document.getElementById("customAudio");
+
+        playButton.addEventListener("click", () => {
+            customAudio.play();
+        });
+
+        pauseButton.addEventListener("click", () => {
+            customAudio.pause();
+        });
+    </script>
+</body>
+
+</html>
