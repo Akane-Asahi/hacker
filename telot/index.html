@@ -40,18 +40,13 @@
 
         button {
             background-color: transparent;
-            border: 1px solid rgb(161, 161, 161);
-            /* Add a 1px white border */
-            border-radius: 10px;
-            /* Make the border rounded */
+            border: 0px solid white;
+            border-radius: 50%;
             cursor: pointer;
-            color: rgb(161, 161, 161);
             transition: opacity 0.3s;
+            padding: 10px;
             margin: 10px;
             margin-top: -200px;
-            padding: 7px;
-            opacity: 0.3;
-            /* Add some padding to make the buttons more clickable */
         }
 
         button:focus {
@@ -65,14 +60,26 @@
         audio {
             display: none;
         }
+
+        /* Set the size of the icons to 20px by 20px */
+        #customAudioControls img {
+            width: 30px;
+            height: 30px;
+        }
     </style>
 </head>
 
 <body>
     <iframe src="https://telot.framer.ai/"></iframe>
     <div id="customAudioControls">
-        <button id="playButton">Play</button>
-        <button id="pauseButton">Pause</button>
+        <button id="playButton">
+            <!-- Use the img element to display the local play SVG icon -->
+            <img src="play.png" alt="Play">
+        </button>
+        <button id="pauseButton">
+            <!-- Use the img element to display the local pause SVG icon -->
+            <img src="pause.png" alt="Pause">
+        </button>
     </div>
     <audio autoplay loop id="customAudio">
         <!-- Specify the source of your audio file using the <source> element -->
