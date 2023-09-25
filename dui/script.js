@@ -32,7 +32,7 @@ var terminalKeys = [
   { val: false, dots: 0}];
 
 var terminalTpl = "<header class='terminal-title'>" +
-    "<span>admin terminal r75_zone 24</span>" +
+    "<span>admin terminal code_19</span>" +
     "<h3>access code required</h3>" +
   "</header>" +
   "<div class='seq-pad'>" +
