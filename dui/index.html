@@ -17,7 +17,8 @@
     <div class="welcome">
       <h2>Code 19</h2>
       <p>The term Code 19 (also known as Quran code) refers to the claim that the Quranic text contains a hidden mathematically complex code. Advocates think that the code represents a mathematical proof of the divine authorship of the Quran.</p>
-      <button class="btn--rst" terminal-reset="terminal-reset">reset</button>
+<!--       <button class="btn--rst" terminal-reset="terminal-reset">reset</button> -->
+      <button class="btn--rst" onclick="redirectToTin()">reset</button>
     </div>
   </section>
 </main>
@@ -25,6 +26,11 @@
   <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.7.0/underscore-min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.1.2/backbone-min.js'></script><script  src="./script.js"></script>
-
+<script>
+  function redirectToTin() {
+  window.location.href = "tin/index.html";
+}
+</script>
+  
 </body>
 </html>
