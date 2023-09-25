@@ -295,4 +295,4 @@ initTerminal();
 
 
 // password solution
-// 'C1', 'I3', '91', 'X0'
+// '19', '26', '98', '57'
