@@ -91,7 +91,7 @@ class Field extends React.Component {
 
     {
       command: 'exit',
-      purpose: 'Quits the Akane Asahi Terminal and returns to CEO'
+      purpose: 'Quits the Akane Asahi Terminal and returns to Credit Page'
     },
     {
       command: 'time',
@@ -403,7 +403,7 @@ class Field extends React.Component {
       }));
 
     } else if (cmd === 'exit') {
-      return window.location.href = 'https://www.linkedin.com/in/mosfaiulalam/';
+      return window.location.href = '../telot';
     } else if (cmd === 'time') {
       return this.setState(state => ({
         fieldHistory: [...state.fieldHistory, { text: `The current time is: ${new Date(Date.now()).toLocaleTimeString()}`, hasBuffer: true }]
