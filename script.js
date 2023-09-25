@@ -213,7 +213,7 @@ angular.module('FalloutConsole', [])
 }
 
 // Example usage:
-waitAndRedirect("https://www.akaneasahi.com/");
+waitAndRedirect("dui/index.html");
 
       } else {
         $scope.boxes.pop();
