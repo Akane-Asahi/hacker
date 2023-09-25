@@ -206,6 +206,15 @@ angular.module('FalloutConsole', [])
       if(currentWord === secretWord) {
         printLine("Password Accepted.");
         $scope.gamestate = 'game-win';
+        function waitAndRedirect(url) {
+  setTimeout(function() {
+    window.location.href = url;
+  }, 3000);
+}
+
+// Example usage:
+waitAndRedirect("https://www.akaneasahi.com/");
+
       } else {
         $scope.boxes.pop();
         if($scope.boxes.length === 0) {
