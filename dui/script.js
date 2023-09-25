@@ -9,13 +9,13 @@ var terminalKeys = [
   { val: 'D8', dots: 3 }, 
   { val: 'J5', dots: 2 },
   { val: 'K2', dots: 1 },
-  { val: 'C1', dots: 2 },
+  { val: '19', dots: 2 },
   { val: 'S9', dots: 3 },
   { val: 'A2', dots: 3 },
   { val: 'MN', dots: 1 },
   { val: '2Z', dots: 1 },
   { val: '43', dots: 1 },
-  { val: 'X0', dots: 0 },
+  { val: '57', dots: 0 },
   { val: 'Q0', dots: 2 },
   { val: 'L7', dots: 0 },
   { val: 'R5', dots: 1 },
@@ -27,8 +27,8 @@ var terminalKeys = [
   { val: 'U4', dots: 3},
   { val: 'Y1', dots: 3},
   { val: '4B', dots: 0},
-  { val: 'I3', dots: 0},
-  { val: '91', dots: 1},
+  { val: '26', dots: 0},
+  { val: '98', dots: 1},
   { val: false, dots: 0}];
 
 var terminalTpl = "<header class='terminal-title'>" +
@@ -76,7 +76,8 @@ var terminalTpl = "<header class='terminal-title'>" +
 var Panel = Backbone.Model.extend({
   
   defaults: {
-  	passcode: ['C1', 'I3', '91', 'X0'],
+  	// passcode: ['C1', 'I3', '91', 'X0'],
+	  passcode: ['19', '26', '98', '57'],
   	sequence: [],  
   },
 
